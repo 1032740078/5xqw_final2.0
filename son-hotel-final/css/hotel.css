@@ -1,0 +1,96 @@
+/*轮播图*/
+#slider {
+	position: relative;
+}
+#back-header {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 5;
+}
+
+
+
+
+
+/*酒店种类选择*/
+.mui-content {
+	background: white;
+}
+.mui-control-item {
+	background: white!important;
+}
+#sliderProgressBar {
+	background: yellow;
+}
+.mui-control-item {
+	font-size: 28px;
+}
+.mui-slider-group {
+	border-top: 20px solid #f7f7f7;
+}
+.mui-table-view-cell .large {
+	display: inline-block;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: black;
+}
+.mui-table-view-cell img {
+	float: right;
+	display: inline-block;
+	width: 25px!important;
+	height: 25px;
+	margin-left: 20px;
+}
+.mui-table-view-cell>.location {
+	float: right;
+	position: relative;
+	width: 48px;
+	height: 44px;
+	margin-right: 15px;
+}
+.mui-table-view-cell>.location>img {
+	position: absolute;
+	right: 11.5px;
+}
+.mui-table-view-cell>.location>p {
+	position: absolute;
+	bottom: 0;
+}
+.mui-table-view-cell>div {
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

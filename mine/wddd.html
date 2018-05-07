@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<!--<link rel="stylesheet" type="text/css" href="../css/app.css" />-->
+	</head>
+
+	<body>
+
+		<style>
+			.mui-control-content {
+				background-color: white;
+				min-height: 87.5vh;
+			}
+
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+		</style>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我的订单</h1>
+		</header>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-inverted" style="background-color: white;">
+					<!--mui-segmented-control-inverted是颜色-->
+					<a class="mui-control-item" href="#item1mobile">
+						全部
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						待付款
+					</a>
+					<a class="mui-control-item" href="#item3mobile">
+						处理中
+					</a>
+					<a class="mui-control-item" href="#item4mobile">
+						已完成
+					</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-3"></div>
+				<div id="list_fu" class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view" style="font-size: 14px">
+									<li class="mui-table-view-cell">
+										<div class="mui-row">
+											<div class="mui-col-xs-10">
+												<font>零创网咖(东莞店)</font>
+											</div>
+											<div class="mui-col-xs-2">
+												<font color="#EC971F">交易成功</font>
+											</div>
+										</div>
+										<a id="list_fu1" href="ddxq.html" class="list_z">
+											<div class="mui-row" style="background-color: #F7F7F7;height: 15vh;margin-top: 2%">
+												<div class="mui-col-xs-4"><img src="../images-community/img-06.png" style="max-height: 14vh;padding-top: 1vh;padding-left: 1vh"></div>
+												<div class="mui-col-xs-6" style="padding-left: 5%;padding-top: 1vh">
+													<font>零创网咖3小时点卡时卡</font>
+												</div>
+												<div class="mui-col-xs-2" style="padding-top: 1vh">
+													<font style="float:right;padding-right: 1vh">¥7.00</font>
+												</div>
+											</div>
+										</a>
+										<div style="height: 5vh"><button type="button" class="mui-btn mui-btn-warning mui-btn-outlined" style="border-radius:20px;float:right;margin-top: 2%">删除订单</button></div>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll3" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div id="item4mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll4" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script>
+			mui.init({
+				swipeBack: true,
+
+			});
+			//			qb(); //先加载全部页
+
+			function qb() {
+				var html1 = '';
+				var item11 = document.getElementById('item1mobile');
+				item11.querySelector('.mui-scroll').innerHTML = html1;
+
+			}
+
+			(function($) {
+				$('.mui-scroll-wrapper').scroll({
+					indicators: true //是否显示滚动条
+				});
+				var html4 = '<ul class="mui-table-view" style="font-size: 14px"><li class="mui-table-view-cell"><div class="mui-row"><div class="mui-col-xs-10"><font>零创网咖(东莞店)</font></div><div class="mui-col-xs-2"><font color="#EC971F">交易成功</font></div></div><div class="mui-row" style="background-color: #F7F7F7;height: 15vh;margin-top: 2%"><div class="mui-col-xs-4"><img src="../images-community/img-06.png" style="max-height: 14vh;padding-top: 1vh;padding-left: 1vh"></div><div class="mui-col-xs-6" style="padding-left: 5%;padding-top: 1vh"><font>零创网咖3小时点卡时卡</font></div><div class="mui-col-xs-2" style="padding-top: 1vh"><font style="float:right;padding-right: 1vh">¥7.00</font></div></div><div style="height: 5vh"><button type="button" class="mui-btn mui-btn-warning mui-btn-outlined" style="border-radius:20px;float:right;margin-top: 2%">删除订单</button></div></li><li class="mui-table-view-cell"><div class="mui-row"><div class="mui-col-xs-10"><font>零创网咖(东莞店)</font></div><div class="mui-col-xs-2"><font color="#EC971F">交易成功</font></div></div><div class="mui-row" style="background-color: #F7F7F7;height: 15vh;margin-top: 2%"><div class="mui-col-xs-4"><img src="../images-community/img-06.png" style="max-height: 14vh;padding-top: 1vh;padding-left: 1vh"></div><div class="mui-col-xs-6" style="padding-left: 5%;padding-top: 1vh"><font>零创网咖3小时点卡时卡</font></div><div class="mui-col-xs-2" style="padding-top: 1vh"><font style="float:right;padding-right: 1vh">¥7.00</font></div></div><div style="height: 5vh"><button type="button" class="mui-btn mui-btn-warning mui-btn-outlined" style="border-radius:20px;float:right;margin-top: 2%">删除订单</button></div></li><li class="mui-table-view-cell"><div class="mui-row"><div class="mui-col-xs-10"><font>零创网咖(东莞店)</font></div><div class="mui-col-xs-2"><font color="#EC971F">交易成功</font></div></div><div class="mui-row" style="background-color: #F7F7F7;height: 15vh;margin-top: 2%"><div class="mui-col-xs-4"><img src="../images-community/img-06.png" style="max-height: 14vh;padding-top: 1vh;padding-left: 1vh"></div><div class="mui-col-xs-6" style="padding-left: 5%;padding-top: 1vh"><font>零创网咖3小时点卡时卡</font></div><div class="mui-col-xs-2" style="padding-top: 1vh"><font style="float:right;padding-right: 1vh">¥7.00</font></div></div><div style="height: 5vh"><button type="button" class="mui-btn mui-btn-warning mui-btn-outlined" style="border-radius:20px;float:right;margin-top: 2%">删除订单</button></div></li><li class="mui-table-view-cell"><div class="mui-row"><div class="mui-col-xs-10"><font>零创网咖(东莞店)</font></div><div class="mui-col-xs-2"><font color="#EC971F">交易成功</font></div></div><div class="mui-row" style="background-color: #F7F7F7;height: 15vh;margin-top: 2%"><div class="mui-col-xs-4"><img src="../images-community/img-06.png" style="max-height: 14vh;padding-top: 1vh;padding-left: 1vh"></div><div class="mui-col-xs-6" style="padding-left: 5%;padding-top: 1vh"><font>零创网咖3小时点卡时卡</font></div><div class="mui-col-xs-2" style="padding-top: 1vh"><font style="float:right;padding-right: 1vh">¥7.00</font></div></div><div style="height: 5vh"><button type="button" class="mui-btn mui-btn-warning mui-btn-outlined" style="border-radius:20px;float:right;margin-top: 2%">删除订单</button></div></li><li class="mui-table-view-cell"><div class="mui-row"><div class="mui-col-xs-10"><font>零创网咖(东莞店)</font></div><div class="mui-col-xs-2"><font color="#EC971F">交易成功</font></div></div><div class="mui-row" style="background-color: #F7F7F7;height: 15vh;margin-top: 2%"><div class="mui-col-xs-4"><img src="../images-community/img-06.png" style="max-height: 14vh;padding-top: 1vh;padding-left: 1vh"></div><div class="mui-col-xs-6" style="padding-left: 5%;padding-top: 1vh"><font>零创网咖3小时点卡时卡</font></div><div class="mui-col-xs-2" style="padding-top: 1vh"><font style="float:right;padding-right: 1vh">¥7.00</font></div></div><div style="height: 5vh"><button type="button" class="mui-btn mui-btn-warning mui-btn-outlined" style="border-radius:20px;float:right;margin-top: 2%">删除订单</button></div></li></ul>';
+				var html2 = '<ul class="mui-table-view" style="font-size: 14px"><li class="mui-table-view-cell"><div class="mui-row"><div class="mui-col-xs-10"><font>零创网咖(东莞店)</font></div><div class="mui-col-xs-2"><font color="#EC971F">交易成功</font></div></div><div class="mui-row" style="background-color: #F7F7F7;height: 15vh;margin-top: 2%"><div class="mui-col-xs-4"><img src="../images-community/img-06.png" style="max-height: 14vh;padding-top: 1vh;padding-left: 1vh"></div><div class="mui-col-xs-6" style="padding-left: 5%;padding-top: 1vh"><font>零创网咖3小时点卡时卡</font></div><div class="mui-col-xs-2" style="padding-top: 1vh"><font style="float:right;padding-right: 1vh">¥7.00</font></div></div><div style="height: 5vh"><button type="button" class="mui-btn mui-btn-warning mui-btn-outlined" style="border-radius:20px;float:right;margin-top: 2%">删除订单</button></div></li><li class="mui-table-view-cell"><div class="mui-row"><div class="mui-col-xs-10"><font>零创网咖(东莞店)</font></div><div class="mui-col-xs-2"><font color="#EC971F">交易成功</font></div></div><div class="mui-row" style="background-color: #F7F7F7;height: 15vh;margin-top: 2%"><div class="mui-col-xs-4"><img src="../images-community/img-06.png" style="max-height: 14vh;padding-top: 1vh;padding-left: 1vh"></div><div class="mui-col-xs-6" style="padding-left: 5%;padding-top: 1vh"><font>零创网咖3小时点卡时卡</font></div><div class="mui-col-xs-2" style="padding-top: 1vh"><font style="float:right;padding-right: 1vh">¥7.00</font></div></div><div style="height: 5vh"><button type="button" class="mui-btn mui-btn-warning mui-btn-outlined" style="border-radius:20px;float:right;margin-top: 2%">删除订单</button></div></li><li class="mui-table-view-cell"><div class="mui-row"><div class="mui-col-xs-10"><font>零创网咖(东莞店)</font></div><div class="mui-col-xs-2"><font color="#EC971F">交易成功</font></div></div><div class="mui-row" style="background-color: #F7F7F7;height: 15vh;margin-top: 2%"><div class="mui-col-xs-4"><img src="../images-community/img-06.png" style="max-height: 14vh;padding-top: 1vh;padding-left: 1vh"></div><div class="mui-col-xs-6" style="padding-left: 5%;padding-top: 1vh"><font>零创网咖3小时点卡时卡</font></div><div class="mui-col-xs-2" style="padding-top: 1vh"><font style="float:right;padding-right: 1vh">¥7.00</font></div></div><div style="height: 5vh"><button type="button" class="mui-btn mui-btn-warning mui-btn-outlined" style="border-radius:20px;float:right;margin-top: 2%">删除订单</button></div></li><li class="mui-table-view-cell"><div class="mui-row"><div class="mui-col-xs-10"><font>零创网咖(东莞店)</font></div><div class="mui-col-xs-2"><font color="#EC971F">交易成功</font></div></div><div class="mui-row" style="background-color: #F7F7F7;height: 15vh;margin-top: 2%"><div class="mui-col-xs-4"><img src="../images-community/img-06.png" style="max-height: 14vh;padding-top: 1vh;padding-left: 1vh"></div><div class="mui-col-xs-6" style="padding-left: 5%;padding-top: 1vh"><font>零创网咖3小时点卡时卡</font></div><div class="mui-col-xs-2" style="padding-top: 1vh"><font style="float:right;padding-right: 1vh">¥7.00</font></div></div><div style="height: 5vh"><button type="button" class="mui-btn mui-btn-warning mui-btn-outlined" style="border-radius:20px;float:right;margin-top: 2%">删除订单</button></div></li><li class="mui-table-view-cell"><div class="mui-row"><div class="mui-col-xs-10"><font>零创网咖(东莞店)</font></div><div class="mui-col-xs-2"><font color="#EC971F">交易成功</font></div></div><div class="mui-row" style="background-color: #F7F7F7;height: 15vh;margin-top: 2%"><div class="mui-col-xs-4"><img src="../images-community/img-06.png" style="max-height: 14vh;padding-top: 1vh;padding-left: 1vh"></div><div class="mui-col-xs-6" style="padding-left: 5%;padding-top: 1vh"><font>零创网咖3小时点卡时卡</font></div><div class="mui-col-xs-2" style="padding-top: 1vh"><font style="float:right;padding-right: 1vh">¥7.00</font></div></div><div style="height: 5vh"><button type="button" class="mui-btn mui-btn-warning mui-btn-outlined" style="border-radius:20px;float:right;margin-top: 2%">删除订单</button></div></li></ul>';
+				var html3 = '<ul class="mui-table-view" style="font-size: 14px"><li class="mui-table-view-cell"><div class="mui-row"><div class="mui-col-xs-10"><font>零创网咖(东莞店)</font></div><div class="mui-col-xs-2"><font color="#EC971F">交易成功</font></div></div><div class="mui-row" style="background-color: #F7F7F7;height: 15vh;margin-top: 2%"><div class="mui-col-xs-4"><img src="../images-community/img-06.png" style="max-height: 14vh;padding-top: 1vh;padding-left: 1vh"></div><div class="mui-col-xs-6" style="padding-left: 5%;padding-top: 1vh"><font>零创网咖3小时点卡时卡</font></div><div class="mui-col-xs-2" style="padding-top: 1vh"><font style="float:right;padding-right: 1vh">¥7.00</font></div></div><div style="height: 5vh"><button type="button" class="mui-btn mui-btn-warning mui-btn-outlined" style="border-radius:20px;float:right;margin-top: 2%">删除订单</button></div></li><li class="mui-table-view-cell"><div class="mui-row"><div class="mui-col-xs-10"><font>零创网咖(东莞店)</font></div><div class="mui-col-xs-2"><font color="#EC971F">交易成功</font></div></div><div class="mui-row" style="background-color: #F7F7F7;height: 15vh;margin-top: 2%"><div class="mui-col-xs-4"><img src="../images-community/img-06.png" style="max-height: 14vh;padding-top: 1vh;padding-left: 1vh"></div><div class="mui-col-xs-6" style="padding-left: 5%;padding-top: 1vh"><font>零创网咖3小时点卡时卡</font></div><div class="mui-col-xs-2" style="padding-top: 1vh"><font style="float:right;padding-right: 1vh">¥7.00</font></div></div><div style="height: 5vh"><button type="button" class="mui-btn mui-btn-warning mui-btn-outlined" style="border-radius:20px;float:right;margin-top: 2%">删除订单</button></div></li><li class="mui-table-view-cell"><div class="mui-row"><div class="mui-col-xs-10"><font>零创网咖(东莞店)</font></div><div class="mui-col-xs-2"><font color="#EC971F">交易成功</font></div></div><div class="mui-row" style="background-color: #F7F7F7;height: 15vh;margin-top: 2%"><div class="mui-col-xs-4"><img src="../images-community/img-06.png" style="max-height: 14vh;padding-top: 1vh;padding-left: 1vh"></div><div class="mui-col-xs-6" style="padding-left: 5%;padding-top: 1vh"><font>零创网咖3小时点卡时卡</font></div><div class="mui-col-xs-2" style="padding-top: 1vh"><font style="float:right;padding-right: 1vh">¥7.00</font></div></div><div style="height: 5vh"><button type="button" class="mui-btn mui-btn-warning mui-btn-outlined" style="border-radius:20px;float:right;margin-top: 2%">删除订单</button></div></li><li class="mui-table-view-cell"><div class="mui-row"><div class="mui-col-xs-10"><font>零创网咖(东莞店)</font></div><div class="mui-col-xs-2"><font color="#EC971F">交易成功</font></div></div><div class="mui-row" style="background-color: #F7F7F7;height: 15vh;margin-top: 2%"><div class="mui-col-xs-4"><img src="../images-community/img-06.png" style="max-height: 14vh;padding-top: 1vh;padding-left: 1vh"></div><div class="mui-col-xs-6" style="padding-left: 5%;padding-top: 1vh"><font>零创网咖3小时点卡时卡</font></div><div class="mui-col-xs-2" style="padding-top: 1vh"><font style="float:right;padding-right: 1vh">¥7.00</font></div></div><div style="height: 5vh"><button type="button" class="mui-btn mui-btn-warning mui-btn-outlined" style="border-radius:20px;float:right;margin-top: 2%">删除订单</button></div></li><li class="mui-table-view-cell"><div class="mui-row"><div class="mui-col-xs-10"><font>零创网咖(东莞店)</font></div><div class="mui-col-xs-2"><font color="#EC971F">交易成功</font></div></div><div class="mui-row" style="background-color: #F7F7F7;height: 15vh;margin-top: 2%"><div class="mui-col-xs-4"><img src="../images-community/img-06.png" style="max-height: 14vh;padding-top: 1vh;padding-left: 1vh"></div><div class="mui-col-xs-6" style="padding-left: 5%;padding-top: 1vh"><font>零创网咖3小时点卡时卡</font></div><div class="mui-col-xs-2" style="padding-top: 1vh"><font style="float:right;padding-right: 1vh">¥7.00</font></div></div><div style="height: 5vh"><button type="button" class="mui-btn mui-btn-warning mui-btn-outlined" style="border-radius:20px;float:right;margin-top: 2%">删除订单</button></div></li></ul>';
+				var item4 = document.getElementById('item4mobile');
+				var item2 = document.getElementById('item2mobile');
+				var item3 = document.getElementById('item3mobile');
+				document.getElementById('slider').addEventListener('slide', function(e) {
+					//					mui.alert(e.detail.slideNumber)
+					if(e.detail.slideNumber === 1) { //第2个选项卡
+						if(item2.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item2.querySelector('.mui-scroll').innerHTML = html2; //添加内容
+							}, 500);
+						}
+					} else if(e.detail.slideNumber === 2) { //第3个选项卡
+						if(item3.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item3.querySelector('.mui-scroll').innerHTML = html3;
+							}, 500);
+						}
+					} else if(e.detail.slideNumber === 3) { //第4个选项卡
+						if(item4.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item4.querySelector('.mui-scroll').innerHTML = html4;
+							}, 500);
+						}
+					}
+				});
+				//				var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+				//				$('.mui-input-group').on('change', 'input', function() {
+				//					if (this.checked) {
+				//						sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+				//						//force repaint
+				//						sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+				//					}
+				//				});
+			})(mui);
+
+			mui('#list_fu').on('tap', '.list_z', function() {
+				var id = this.getAttribute('id'); //a点击的事件获取id
+				//				mui.alert(id);
+				var href = mui(id)[0];
+				var href2 = this.getAttribute('href'); //a的href
+
+				var titleNView = {
+					backgroundColor: '#fff', //导航栏背景色
+					titleText: '', //导航栏标题
+					titleColor: '#000000', //文字颜色
+					type: 'transparent', //透明渐变样式
+					autoBackButton: true, //自动绘制返回箭头
+					splitLine: { //底部分割线
+						color: '#cccccc'
+					}
+				};
+				console.log(href2);
+				mui.openWindow({
+					url: href2,
+					id: "hrefid",
+					styles: {
+						titleNView: titleNView,
+					},
+
+				});
+			});
+		</script>
+
+	</body>
+
+</html>

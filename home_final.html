@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/home.css" />
+		<style type="text/css">
+			.mui-content {
+				background: white;
+			}
+
+			.mui-control-content {
+				background-color: white;
+				min-height: 215px;
+			}
+
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+
+			.mui-pull-top-pocket {}
+
+			p {
+				text-indent: 22px;
+			}
+
+			.mui-content {
+				padding-top: 45px;
+			}
+
+			.cnxhclass {}
+
+			.rmjq {}
+
+			.rmjq2 {}
+		</style>
+
+	</head>
+
+	<body>
+		<div id="pullrefresh" class=" mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!--
+
+        	时间：2017-12-20
+        	描述：轮播图
+        -->
+				<div id="slider" class="mui-slider">
+					<div class="mui-slider-group mui-slider-loop">
+						<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="imgs/home_02.jpg">
+							</a>
+						</div>
+						<!-- 第一张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="imgs/home_02.jpg">
+							</a>
+						</div>
+						<!-- 第二张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="imgs/home_66.png">
+							</a>
+						</div>
+						<!-- 第三张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="imgs/home_59.png">
+							</a>
+						</div>
+						<!-- 第四张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="imgs/home_66.png">
+							</a>
+						</div>
+						<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="imgs/home_02.jpg">
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+
+				</div>
+
+				<!-- 搜索框 -->
+				<div class="mui-row mui-input-row mui-search" style="background: white;">
+					<div class="mui-col-xs-6" style="margin: 4% 3% 0 3%;width: 94%;">
+						<input type="search" class="mui-input-clear " placeholder="冬天旅行暖心记" style="border-radius: 20px;">
+					</div>
+
+				</div>
+
+				<!-- 导航菜单按钮 -->
+				<div class="home-qnav ui-box" id="leftNav">
+					<div class="ui-flex flex-justify-sb txt-001">
+						<div>
+							<a id="ico1" class="dhcd1" href="son-nearby-final/nearby.html"><img src="img-home-final/home_09.jpg" class="ico" /><span class="name">周边游</span></a>
+						</div>
+						<div>
+							<a class="dhcd1" id="ico2" href="son-inland-final/inland.html"><img src="img-home-final/home_11.jpg" class="ico" /><span class="name">国内游</span></a>
+						</div>
+						<div>
+							<a class="dhcd1" id="ico3" href="son_pages/jiudian.html"><img src="img-home-final/home_13.jpg" class="ico" /><span class="name">品牌酒店</span></a>
+						</div>
+						<div>
+							<a class="dhcd1" id="ico4" href="son-theme-final/theme.html"><img src="img-home-final/home_15.jpg" class="ico" /><span class="name">主题乐园</span></a>
+						</div>
+						<div id="gentuanyou">
+							<a class="dhcd1" id="ico5" href="son_pages/tuangou.html"><img src="img-home-final/home_17.jpg" class="ico" /><span class="name">跟团游</span></a>
+						</div>
+					</div>
+				</div>
+
+				<!-- 大广告 -->
+				<div id="" style="margin-top: 1%;">
+
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<img class=" mui-pull-left" style="width: 105px;" src="images-community/img-05.png">
+								<div class="mui-media-body" style="padding-left: 5%;font-size: 14px;">
+									一路阳光一路海,一路公路
+									<div class="mui-ellipsis">
+										<p style="font-size: 12px;margin-left: -20px;">你是我翻山越岭寻找我的小熊</p>
+										<p style="font-size: 12px;margin-left: -20px;">我是茫茫人海中等待你的那棵树</p>
+									</div>
+									<div class="mui-row">
+
+										<div class="mui-col-xs-2" style="padding-top: 3%;">
+											<font><span style="font-family: '微软雅黑';font-size: 22px;color: red;">￥199</span> 起</font>
+										</div>
+
+										<div class="mui-col-xs-2" style="padding-top: 3%;margin-right: 25px;float: right;">
+											<font style="font-size: 10px;">广州出发</font>
+										</div>
+									</div>
+
+								</div>
+
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- 猜你喜欢 -->
+				<div style="background-color:#fff;margin-top: 1%; ">
+
+					<ul id="cnxh" class="mui-table-view mui-grid-view">
+						<div class="mui-row">
+							<!--小黄块-->
+							<div class="enjoy-css mui-col-xs-1"></div>
+							<div class="mui-col-xs-11">
+								<h5 class="h3_002" style="color: #333333;background-color:#fff;display: inline-block;width: 100px;">猜你喜欢</h5>
+								<a>
+									<h6 style="float: right;margin: 16px 5px 0 0;">更多</h6></a>
+							</div>
+						</div>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4">
+							<a id="cnxh_a_1" class="cnxhclass" href="ticket-info-final/ticket-info.html">
+								<img class="mui-media-object " src="images-home/home_47.png">
+								<h5 class="font-001" style="color: #333333;">四川-重庆</h5>
+								<h6 class="font-001">疯狂无罪够胆你就...</h6>
+								<h5 class="font-001"><font color="#FF0000">¥1229</font></h5>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4">
+							<a id="cnxh_a_2" class="cnxhclass" href="ticket-info-final/ticket-info.html">
+								<img class="mui-media-object" src="images-home/home_49.png">
+								<h5 class="font-001" style="color: #333333;">茂名-高州</h5>
+								<h6 class="font-001">疯狂无罪够胆你就...</h6>
+								<h5 class="font-001"><font color="#FF0000">¥2229</font></h5>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4">
+							<a id="cnxh_a_3" class="cnxhclass" href="ticket-info-final/ticket-info.html">
+								<img class="mui-media-object" src="images-home/home_51.png">
+								<h5 class="font-001" style="color: #333333;">广西-桂林-百色</h5>
+								<h6 class="font-001">疯狂无罪够胆你就...</h6>
+								<h5 class="font-001"><font color="#FF0000">¥4229</font></h5>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- 当季热门 -->
+				<div style="margin-top: 1%;">
+					<div id="slider" class="mui-slider">
+
+						<div class="mui-row" style="background-color: #fff;">
+							<!--小黄块-->
+							<div class="enjoy-css mui-col-xs-1" style="background: #2AC845;"></div>
+							<div class="mui-col-xs-11">
+								<h5 class="h3_002" style="color: #333333;display: inline-block;width: 100px;">当季热门</h5>
+								<a>
+									<h6 style="float: right;margin: 16px 5px 0 0;">更多</h6></a>
+							</div>
+						</div>
+						<div class="mui-slider-group mui-card-content">
+							<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+								<div id="scroll1">
+
+									<ul class="mui-table-view mui-grid-view rmjq">
+										<li class="mui-table-view-cell mui-media mui-col-xs-6 rmjq2">
+											<a href="#">
+												<img class="mui-media-object " src="images-home/home_47.png">
+												<p class="font-001">四川-重庆</p>
+												<h6 class="font-001">疯狂无罪够胆你就来这</h6>
+												<h4 class="font-001"><font color="#FF0000">¥1229</font></h4>
+											</a>
+										</li>
+										<li class="mui-table-view-cell  mui-media mui-col-xs-6 rmjq2">
+											<a href="#">
+												<img class="mui-media-object" src="images-home/home_49.png">
+												<p class="font-001">茂名-高州</p>
+												<h6 class="font-001">疯狂无罪够胆你就来这</h6>
+												<h4 class="font-001"><font color="#FF0000">¥2229</font></h4>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6 rmjq2">
+											<a href="#"><img class="mui-media-object" src="images-home/home_51.png">
+												<h4 class="font-001">广西-桂林-百色</h4>
+												<h6 class="font-001">疯狂无罪够胆你就来这</h6>
+												<h4 class="font-001"><font color="#FF0000">¥4229</font></h4>
+											</a>
+										</li>
+										<li class="mui-table-view-cell mui-media mui-col-xs-6 rmjq2">
+											<a href="#">
+												<img class="mui-media-object " src="images-home/home_47.png">
+												<h4 class="font-001">四川-重庆</h4>
+												<h6 class="font-001">疯狂无罪够胆你就来这</h6>
+												<h4 class="font-001"><font color="#FF0000">¥1229</font></h4>
+											</a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script>
+			//			mui.init({
+			//				swipeBack: false
+			//			});
+			//			(function($) {
+			//				$('.mui-scroll-wrapper').scroll({
+			//					indicators: true //是否显示滚动条
+			//				});
+			//				var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+			//				var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li><li class="mui-table-view-cell">第三个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
+			//				var item2 = document.getElementById('item2mobile');
+			//				var item3 = document.getElementById('item3mobile');
+			//				document.getElementById('slider').addEventListener('slide', function(e) {
+			//					if(e.detail.slideNumber === 1) {
+			//						if(item2.querySelector('.mui-loading')) {
+			//							setTimeout(function() {
+			//								item2.querySelector('.mui-scroll').innerHTML = html2;
+			//							}, 500);
+			//						}
+			//					} else if(e.detail.slideNumber === 2) {
+			//						if(item3.querySelector('.mui-loading')) {
+			//							setTimeout(function() {
+			//								item3.querySelector('.mui-scroll').innerHTML = html3;
+			//							}, 500);
+			//						}
+			//					}
+			//				});
+			//				var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+			//				$('.mui-input-group').on('change', 'input', function() {
+			//					if(this.checked) {
+			//						sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+			//						//force repaint
+			//						sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+			//					}
+			//				});
+			//			})(mui);
+
+			mui.init({
+				pullRefresh: {
+					container: '#pullrefresh',
+					down: {
+						callback: pulldownRefresh
+					},
+					up: {
+						contentrefresh: '正在加载...',
+						callback: pullupRefresh
+					}
+
+				}
+
+			});
+			/**
+			 * 下拉刷新具体业务实现
+			 */
+			function pulldownRefresh() {
+				setTimeout(function() {
+					var table = document.body.querySelector('.rmjq');
+					var cells = document.body.querySelectorAll('.rmjq2');
+					for(var i = cells.length, len = i + 2; i < len; i++) {
+						var li = document.createElement('li');
+						li.className = 'rmjq2';
+						li.innerHTML = '<li class="mui-table-view-cell mui-media mui-col-xs-6 rmjq2"><a href="#"><img class="mui-media-object" src="images-home/home_51.png"><h4 class="font-001">广西-桂林-百色</h4><h6 class="font-001">疯狂无罪够胆你就来这</h6><h4 class="font-001"><font color="#FF0000">¥4229</font></h4></a></li><li class="mui-table-view-cell mui-media mui-col-xs-6 rmjq2"><a href="#"><img class="mui-media-object" src="images-home/home_47.png"><h4 class="font-001">四川-重庆</h4><h6 class="font-001">疯狂无罪够胆你就来这</h6><h4 class="font-001"><font color="#FF0000">¥1229</font></h4></a></li>';
+						//下拉刷新，新纪录插到最前面；
+						table.insertBefore(li, table.firstChild);
+					}
+					mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
+				}, 1500);
+			}
+			var count = 0;
+			/**
+			 * 上拉加载具体业务实现
+			 */
+			function pullupRefresh() {
+				setTimeout(function() {
+					mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+					var table = document.body.querySelector('.rmjq');
+					var cells = document.body.querySelectorAll('.rmjq2');
+					for(var i = cells.length, len = i + 2; i < len; i++) {
+						var li = document.createElement('li');
+						li.className = 'rmjq2';
+						li.innerHTML = '<li class="mui-table-view-cell mui-media mui-col-xs-6 rmjq2"><a href="#"><img class="mui-media-object" src="images-home/home_51.png"><h4 class="font-001">广西-桂林-百色</h4><h6 class="font-001">疯狂无罪够胆你就来这</h6><h4 class="font-001"><font color="#FF0000">¥4229</font></h4></a></li><li class="mui-table-view-cell mui-media mui-col-xs-6 rmjq2"><a href="#"><img class="mui-media-object" src="images-home/home_47.png"><h4 class="font-001">四川-重庆</h4><h6 class="font-001">疯狂无罪够胆你就来这</h6><h4 class="font-001"><font color="#FF0000">¥1229</font></h4></a></li>';
+						table.appendChild(li);
+					}
+				}, 1500);
+			}
+
+			//
+			var loadMore = function(pullRefresh) {
+				// 加载更多的内容到列表中
+
+				// 如果没有更多数据了，则关闭上拉加载
+				pullRefresh.endPullupToRefresh(false);
+				// 如果有更多数据，则继续
+				//			    pullRefresh.endPullupToRefresh(false);
+			};
+
+			mui('#leftNav').on('tap', '.dhcd1', function() { //导航菜单按钮点击事件
+
+				var id = this.getAttribute('id'); //a点击的事件获取id
+				//				mui.alert(id);
+				var href = mui(id)[0];
+				var href2 = this.getAttribute('href'); //a的href
+				//				mui.alert(href2);
+				mui.openWindow(href2); //跳转页面
+
+			});
+
+			function tccd() {
+
+				var hrefID = plus.webview.getWebviewById('hrefid');
+				mui.alert(hrefID.getElementById("openPopover"));
+
+				//				hrefID.popover('toggle', document.getElementById("openPopover"));
+				//				mui('.mui-popover').popover('toggle', document.getElementById('openPopover'));
+
+			}
+			mui('#cnxh').on('tap', '.cnxhclass', function() { //猜你喜欢点击
+
+				var id = this.getAttribute('id'); //a点击的事件获取id
+				//				mui.alert(id);
+				var href = mui(id)[0];
+				var href2 = this.getAttribute('href'); //a的href
+				//				mui.alert(href2);
+				var titleNView = {
+					backgroundColor: '#fff', //导航栏背景色
+					titleText: '', //导航栏标题
+					titleColor: '#000000', //文字颜色
+					type: 'transparent', //透明渐变样式
+					autoBackButton: true, //自动绘制返回箭头
+					buttons: [{
+						onclick: "javascript:plus.webview.getWebviewById('hrefid').evalJS('tccd();')", //执行子页面里面的函数
+						text: '...',
+						float: 'right',
+						id: 'buttons1',
+					}],
+
+					splitLine: { //底部分割线
+						color: '#cccccc'
+					}
+				}
+				//				mui.openWindow(href2); //跳转页面
+				//使用mui的窗口打开方式
+				mui.openWindow({
+					url: href2,
+					id: "hrefid",
+					styles: {
+						titleNView: titleNView,
+					},
+
+
+				});
+
+			});
+
+			//			mui('#gentuanyou').on('tap',Function(){
+			//				mui.openWindow('son_pages/tuangou.html');
+			//
+			//
+			//			})
+//			mui.alert(plus.screen.resolutionHeight * plus.screen.scale) ;
+		</script>
+
+		<!--<script src="js/mui.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			var slider = mui("#slider");
+
+			slider.slider({
+				interval: 5000
+			});
+
+		</script>
+		<script src="js/sy.js"></script>-->
+	</body>
+
+</html>

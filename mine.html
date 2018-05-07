@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!--头部开始信息开始-->
+		<div class="mui-content">
+			<div style="background-image: url(images-mine/Img-01.png);background-size:100%;padding-top: 2%;">
+				<div id="" style="text-align:center;font-size: 0.6rem;">
+					<img src="images-mine/login-user.png" style="width: 20%;" />
+					<p style="color: white;">登陆/注册</p>
+				</div>
+				<div style="text-align:center;font-size: 1rem;color: white;">
+					<div class="mui-row" style="width: 100%;">
+						<!--<div class="mui-col-ms-2" style="width: 20%;">
+							
+						</div>-->
+						<div class="mui-col-ms-2" style="width: 25%;">
+							<font>0</font>
+							<p style="color: white;">账号余额</p>
+						</div>
+						<div class="mui-col-ms-2" style="width: 25%;">
+							<font>0</font>
+							<p style="color: white;">信用分值</p>
+						</div>
+						<div class="mui-col-ms-2" style="width: 25%;">
+							<font>0</font>
+							<p style="color: white;">优惠劵包</p>
+						</div>
+						<div class="mui-col-ms-2" style="width: 25%;">
+							<font>0</font>
+							<p style="color: white;">电子门票</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--头部开始信息结束-->
+			<!--列表开始-->
+			<div id="wd" style="margin-top: 2%;">
+				<ul class="mui-table-view mui-table-view-chevron">
+					<li class="mui-table-view-cell mui-media">
+						<a id="wddd" class="mui-navigate-right" href="mine/wddd.html">
+							<img src="images-mine/Icon-01.png" style="vertical-align:middle;width: 10%;">
+							<font>我的订单</font>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a id="wdcb" class="mui-navigate-right" href="mine/wdqb.html">
+							<img src="images-mine/icon-02.png" style="vertical-align:middle;width: 10%;">
+							<font>我的钱包</font>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a id="wdsc" class="mui-navigate-right" href="mine/wdsc.html">
+							<img src="images-mine/icon-03.png" style="vertical-align:middle;width: 10%;">
+							<font>我的收藏</font>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a id="cyxx" class="mui-navigate-right" href="#account">
+							<img src="images-mine/icon-04.png" style="vertical-align:middle;width: 10%;">
+							<font>常用消息</font>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a id="lsll" class="mui-navigate-right" href="#account">
+							<img src="images-mine/icon-06.jpg" style="vertical-align:middle;width: 10%;">
+							<font>历史浏览</font>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div style="margin-top: 2%;">
+				<ul class="mui-table-view mui-table-view-chevron">
+					<li class="mui-table-view-cell mui-media">
+						<a class="mui-navigate-right" href="#account">
+							<img src="images-mine/icon-07.jpg" style="vertical-align:middle;width: 10%;">
+							<font>关于我想去玩</font>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a class="mui-navigate-right" href="#account">
+							<img src="images-mine/icon-08.jpg" style="vertical-align:middle;width: 10%;">
+							<font>设置</font>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!--列表结束-->
+
+			<!--<div class="" style="width: 70%;margin-top: 3%;margin-left: 15%;">
+				<button type="button" class="mui-btn mui-btn-danger mui-btn-block">退出登录</button>
+
+			</div>-->
+		</div>
+
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			mui('#wd').on('tap', '.mui-navigate-right', function() { //列表点击
+
+				var id = this.getAttribute('id'); //a点击的事件获取id
+				//				mui.alert(id);
+				var href = mui(id)[0];
+				var href2 = this.getAttribute('href'); //a的href
+				//				mui.alert(href2);
+//				var titleNView = {
+//					backgroundColor: '#fff', //导航栏背景色
+//					titleText: '', //导航栏标题
+//					titleColor: '#000000', //文字颜色
+//					type: 'transparent', //透明渐变样式
+//					autoBackButton: true, //自动绘制返回箭头
+////					buttons: [{
+////						onclick: "javascript:plus.webview.getWebviewById('hrefid').evalJS('tccd();')", //执行子页面里面的函数
+////						text: '...',
+////						float: 'right',
+////						id: 'buttons1',
+////					}],
+//
+//					splitLine: { //底部分割线
+//						color: '#cccccc'
+//					}
+//				}
+				//				mui.openWindow(href2); //跳转页面
+				//使用mui的窗口打开方式
+				mui.openWindow({
+					url: href2,
+					id: "hrefid",
+					
+					
+					
+				});
+				
+			});
+
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="ticket-info.css" />
+		<link rel="stylesheet" type="text/css" href="../css/home.css" />
+		<style>
+			.mui-popover {
+				height: 26%;
+				width: 30%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--
+        	作者：416840821@qq.com
+        	时间：2017-12-19
+        	描述：页眉
+        -->
+		<!-- 轮播广告 -->
+
+		<div id="slider" class="mui-slider" style="width: 100%; height: 250px;">
+			<!--<div class="mui-row" style="position:absolute;z-index:9998;width: 100%;padding-top: 2%;padding-left: 5%;background: rgba(128,128,128, 0.2);">
+				<div class="mui-col-ms-2" style="float: left;">
+					
+					<img class=" mui-action-back" style="width: 50%;" src="img/back.png" />
+				</div>
+				<div class="mui-col-ms-2 "style="float: right;">
+					<a href="#middlePopover"><img src="img/icon-03.png" style="width: 50%;"/></a>
+				</div>
+				<div class="mui-col-ms-2" style="float: right;">
+					
+					<img class="" src="img/icon-02.png"style="width: 50%;" />
+				</div>
+				
+			</div>-->
+			<!-- 详情按钮 -->
+
+			<!-- 图片页数 -->
+			<!--<img class="page" src="img/page.png" />-->
+
+			<div class="mui-slider-group mui-slider-loop">
+
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="img/tupian.png">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/tupian.png">
+					</a>
+				</div>
+				<!-- 第2张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/tupian.png">
+					</a>
+				</div>
+				<!-- 第3张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/tupian.png">
+					</a>
+				</div>
+				<!-- 第4张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/tupian.png">
+					</a>
+				</div>
+
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="img/tupian.png">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+
+		</div>
+
+		<!-- 简介 -->
+		<div class="mui-card">
+			<div class="mui-card-content">
+				<div class="mui-card-content-inner">
+					<div style="display: inline-block;">
+
+						<div class="mui-row" style="width: 100%;">
+							<div class="mui-col-xs-12">
+								<p id="biaoti" style="width: 100%;font-family: '微软雅黑';font-size: 18px;color: black;">长隆国际大马戏</p>
+							</div>
+
+							<div class="mui-col-xs-2" style="padding-left:8% ;margin-left: -7%;padding-bottom: 5%;">
+								<img src="img/add.png" style="width: 70%;vertical-align:middle;" />
+							</div>
+							<div class="mui-col-xs-4">
+								<h5 style="color: #B6B6B6;font-size: 12px;">广东广州</h5>
+							</div>
+
+						</div>
+
+						<!--<div class="" style="font-family: '微软雅黑';font-size: 12px;color: black;">
+							
+							
+						</div>-->
+
+						<p style="width: 100%;font-size: 14px;">开放时间:2017-10-11至2018-10-09</p>
+					</div>
+
+					<p style="font-family: '微软雅黑';font-size: 18px;color: #f0ad4e;">￥198<span>起/人</span></p>
+				</div>
+			</div>
+
+			<!--<div class="mui-card-footer" style="font-family: '微软雅黑';font-size: 12px;color: black;padding: 7px 10px;">
+				进入店铺领代金券
+				<img style="width: 2%;" src="img/icon.png" style="float: right;" />
+			</div>
+
+			
+
+			<div class="mui-card-footer" style="font-family: '微软雅黑';font-size: 12px;color: black;padding: 7px 10px;">
+				景区介绍
+				<img src="img/icon.png" style="float: right;width: 2%;" />
+			</div>-->
+
+		</div>
+		<div class="mui-card" style="margin-top: 1%;">
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right" href="#account" style="font-size: 14px;">
+						<!--<img src="images-mine/Icon-01.png" style="vertical-align:middle;width: 10%;">-->
+						<font>进入店铺领代金券</font>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+		<div class="mui-card" style="margin-top: 1%;">
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right" href="#account" style="font-size: 14px;">
+						<!--<img src="images-mine/Icon-01.png" style="vertical-align:middle;width: 10%;">-->
+						<font>景区介绍</font>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+		<!--
+        	作者：416840821@qq.com
+        	时间：2017-12-20
+        	描述：推荐广告区
+        -->
+		<div class="mui-card" style="margin-top: 2%;">
+
+			<div class="mui-card-footer" style="font-family: '微软雅黑';font-size: 14px;color: black;">
+				推荐
+			</div>
+
+			<div class="mui-card-content" style="border-top: 1px solid #F1F1F1;">
+				<div class="mui-card-content-inner">
+					<div style="float: left;">
+						<p style="width: 100%;font-family: '微软雅黑';font-size: 14px;color: black;">[当日可订]长隆国际大马戏</p>
+						<font class="price">¥128 <samp style="font-size: 12px;color: #B6B6B6;"> 丨门市价:¥188</samp></font>
+						<div style="width: 200px;margin-bottom: 1%;">
+
+							<img style="width: 12px;margin-right: 5px;vertical-align:middle;margin-left: 4%;" src="img/OK.png" /><span style="font-size: 12px;">18:00前可订</span>
+							<img style="width: 12px;margin-right: 5px;margin-left: 5px;vertical-align:middle;" src="img/OK.png" /><span style="font-size: 12px;">无条件退</span>
+						</div>
+
+						<div style="">
+							<span style="font-size: 14px;color: gray;margin-left: 4%;">订票须知</span>
+							<img style="width: 3%;vertical-align:middle;" src="img/icon.png" />
+						</div>
+
+					</div>
+					<div class="mui-row" style="width: 100%;">
+						<div class="mui-col-xs-10" style="padding-left: 65%;padding-top: 1.5%;">
+
+						</div>
+						<div class="mui-col-xs-2">
+							<button type="button" class="mui-btn mui-btn-warning mui-btn-outlined">
+					购买
+				</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="mui-card-content-inner" style="border-top: 1px solid #F1F1F1;">
+				<div style="float: left;margin-bottom: 3%;">
+					<p style="width: 100%;font-family: '微软雅黑';font-size: 14px;color: black;margin-left: 2%;">我想去玩</p>
+					<div style="width: 110%;">
+						<img style="width: 12px;margin-right: 5px;vertical-align:middle;margin-left: 1%;" src="img/OK.png" /><span style="font-size: 12px;">游玩保证</span>
+						<img style="width: 12px;margin-right: 5px;margin-left: 5px;vertical-align:middle;" src="img/OK.png" /><span style="font-size: 12px;">游玩保证</span>
+					</div>
+				</div>
+
+				<!--<img src="img/icon.png" style="float: right;width: 2%;"/>-->
+			</div>
+		</div>
+
+		<!--
+        	作者：416840821@qq.com
+        	时间：2017-12-20
+        	描述：景区须知
+        -->
+		<div class="mui-card" style="margin-top: 1%;">
+
+			<div class="mui-card-footer" style="font-family: '微软雅黑';font-size: 14px;color: black;">
+				景区须知
+			</div>
+
+			<div class="mui-card-content" style="border-top: 1px solid #F1F1F1;">
+				<div class="mui-card-content-inner">
+					<font style="font-family: '微软雅黑';font-size: 14px;">开放时间：</font>
+					<dir></dir>
+					<font style="font-family: '微软雅黑';font-size: 14px;">星期一到星期五:17:00 - 21:00</font>
+					<dir></dir>
+					<font style="font-family: '微软雅黑';font-size: 14px;">星期六到星期日:18:00 - 22:00</font>
+				</div>
+			</div>
+
+			<div class="mui-card-content" style="border-top: 1px solid #F1F1F1;">
+				<div class="mui-card-content-inner" style="padding: 3% 4% 0px 4% ">
+					<p style="font-family: '微软雅黑';font-size: 14px;color: black;">免费政策：一律收费</p>
+				</div>
+			</div>
+
+		</div>
+
+		<!--
+        	作者：416840821@qq.com
+        	时间：2017-12-20
+        	描述：其他推荐
+        -->
+		<div class="mui-card" style="margin-top: 1%;">
+
+			<div class="mui-card-footer" style="font-family: '微软雅黑';font-size: 14px;color: black;">
+				其他推荐
+				<a href="">更多</a>
+			</div>
+
+			<div class="mui-card-content" style="border-top: 1px solid #F1F1F1;">
+				<div class="">
+					<ul class="mui-table-view mui-grid-view">
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="#">
+								<img class="mui-media-object " src="../images-home/home_47.png">
+								<p class="font-001" style="color: black;">四川-重庆</p>
+								<h6 class="font-001">疯狂无罪够胆你就来这</h6>
+								<h4 class="font-001"><font color="#f0ad4e">¥1229</font></h4>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="#">
+								<img class="mui-media-object" src="../images-home/home_49.png">
+								<p class="font-001" style="color: black;">茂名-高州</p>
+								<h6 class="font-001">疯狂无罪够胆你就来这</h6>
+								<h4 class="font-001"><font color="#f0ad4e">¥2229</font></h4>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="#"><img class="mui-media-object" src="../images-home/home_51.png">
+								<p class="font-001" style="color: black;">广西-桂林-百色</p>
+								<h6 class="font-001">疯狂无罪够胆你就来这</h6>
+								<h4 class="font-001"><font color="#f0ad4e">¥4229</font></h4>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-6">
+							<a href="#">
+								<img class="mui-media-object " src="../images-home/home_47.png">
+								<p class="font-001" style="color: black;">四川-重庆</p>
+								<h6 class="font-001">疯狂无罪够胆你就来这</h6>
+								<h4 class="font-001"><font color="#f0ad4e">¥1229</font></h4>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<!--<div id="middlePopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view" style="text-align:center;">
+						<li class="mui-table-view-cell">
+							<a href="#">回到首页</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#">联系客服</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#">收藏产品</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#">历史记录</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>-->
+		<div id="sheet1" class="mui-popover mui-popover-bottom mui-popover-action rmjq2" style="height: 0%;">
+			<!-- 可选择菜单 -->
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#">回到首页</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">联系客服</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">收藏产品</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">历史记录</a>
+				</li>
+			</ul>
+			<!-- 取消菜单 -->
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#sheet1"><b>取消</b></a>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script type="text/javascript">
+		mui.init();
+		mui.back = function() { //返回键事件
+			void plus.webview.close(plus.webview.currentWebview());
+		}
+		mui('.mui-scroll-wrapper').scroll();
+		mui('body').on('shown', '.mui-popover', function(e) {
+			//console.log('shown', e.detail.id);//detail为当前popover元素
+		});
+		mui('body').on('hidden', '.mui-popover', function(e) {
+			//console.log('hidden', e.detail.id);//detail为当前popover元素
+		});
+
+		function tccd() {
+			mui('#sheet1').popover('toggle');
+		}
+		mui.plusReady(function() {
+			var gao = plus.screen.resolutionHeight * plus.screen.scale;
+			//		mui.alert(gao);
+			var pop = document.getElementById("sheet1"); //取id对象
+			gaodu = 2208 * 0.11; //弹出菜单的height
+			mui.alert(gaodu);
+
+			pop.style.height = gaodu + "px"; //style节点的值
+		});
+
+		//			var li = document.createElement('div');
+		//			li.className = 'rmjq2';
+		//			li.innerHTML = '<li class="mui-table-view-cell mui-media mui-col-xs-6 rmjq2"><a href="#"><img class="mui-media-object" src="images-home/home_51.png"><h4 class="font-001">广西-桂林-百色</h4><h6 class="font-001">疯狂无罪够胆你就来这</h6><h4 class="font-001"><font color="#FF0000">¥4229</font></h4></a></li><li class="mui-table-view-cell mui-media mui-col-xs-6 rmjq2"><a href="#"><img class="mui-media-object" src="images-home/home_47.png"><h4 class="font-001">四川-重庆</h4><h6 class="font-001">疯狂无罪够胆你就来这</h6><h4 class="font-001"><font color="#FF0000">¥1229</font></h4></a></li>';
+		//			table.appendChild(li);
+	</script>
+
+</html>

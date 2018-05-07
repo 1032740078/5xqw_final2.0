@@ -1,0 +1,793 @@
+{
+	"@platforms": ["android", "iPhone", "iPad"],
+	"id": "H5F313292",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "5xqw",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "1.0.0",/*应用版本名称*/
+		"code": "83"
+	},
+	"description": "测试",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "robin",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": ""
+	},
+	"permissions": {
+		"Accelerometer": {
+            "description": "访问加速度感应器"
+        },
+        "Audio": {
+            "description": "访问麦克风"
+        },
+        "Cache": {
+            "description": "管理应用缓存"
+        },
+        "Camera": {
+            "description": "访问摄像头"
+        },
+        "Console": {
+            "description": "跟踪调试输出日志"
+        },
+        "Contacts": {
+            "description": "访问系统联系人信息"
+        },
+        "Device": {
+            "description": "访问设备信息"
+        },
+        "Downloader": {
+            "description": "文件下载管理"
+        },
+        "Events": {
+            "description": "应用扩展事件"
+        },
+        "File": {
+            "description": "访问本地文件系统"
+        },
+        "Gallery": {
+            "description": "访问系统相册"
+        },
+        "Geolocation": {
+            "description": "访问位置信息"
+        },
+         "Invocation": {
+            "description": "使用Native.js能力"
+        },
+        "Messaging": {
+            "description": "访问通讯能力"
+        },
+        "Orientation": {
+            "description": "访问方向感应器"
+        },
+        "Proximity": {
+            "description": "访问距离感应器"
+        },
+        "Storage": {
+            "description": "管理应用本地数据"
+        },
+        
+        "Uploader": {
+            "description": "管理文件上传任务"
+        },
+        "Runtime": {
+            "description": "访问运行期环境"
+        },
+        "XMLHttpRequest": {
+            "description": "跨域网络访问"
+        },
+        "Zip": {
+            "description": "文件压缩与解压缩"
+        },
+        "Barcode": {
+            "description": "管理二维码扫描插件"
+        },
+        "Maps": {
+            "description": "管理地图插件"
+        },
+        "Speech": {},
+        "Webview":{
+        	"description": "窗口管理"
+        },
+        "NativeUI":{
+        	"description": "原生UI控件"
+        },
+        "Navigator":{
+        	"description": "浏览器信息"
+        },
+        "NativeObj":{
+        	"description": "原生对象"
+        }
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true
+		},
+		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {"plugins":{"oauth":{}},
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": ["<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.ACCESS_SURFACE_FLINGER\"/>","<uses-permission android:name=\"android.permission.BLUETOOTH_PRIVILEGED\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_CHECKIN_PROPERTIES\"/>","<uses-permission android:name=\"android.permission.ADD_VOICEMAIL\"/>","<uses-permission android:name=\"android.permission.BIND_WALLPAPER\"/>","<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.ACCESS_LOCATION_EXTRA_COMMANDS\"/>","<uses-permission android:name=\"android.permission.INTERNET\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.BIND_NFC_SERVICE\"/>","<uses-permission android:name=\"android.permission.BIND_REMOTEVIEWS\"/>","<uses-permission android:name=\"android.permission.BIND_VOICE_INTERACTION\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>","<uses-permission android:name=\"android.permission.WRITE_SMS\"/>","<uses-permission android:name=\"android.permission.BIND_PRINT_SERVICE\"/>","<uses-permission android:name=\"android.permission.BIND_DEVICE_ADMIN\"/>","<uses-permission android:name=\"android.permission.BIND_CARRIER_MESSAGING_SERVICE\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.BIND_INPUT_METHOD\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission  android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>","<uses-permission android:name=\"android.permission.BIND_VPN_SERVICE\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.BIND_DREAM_SERVICE\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.BIND_NOTIFICATION_LISTENER_SERVICE\"/>","<uses-permission android:name=\"android.permission.BLUETOOTH\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"android.permission.SEND_SMS\"/>","<uses-permission android:name=\"android.permission.BIND_APPWIDGET\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.AUTHENTICATE_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-permission android:name=\"android.permission.ACCOUNT_MANAGER\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.BIND_ACCESSIBILITY_SERVICE\"/>","<uses-permission android:name=\"android.permission.BIND_TEXT_SERVICE\"/>","<uses-permission android:name=\"android.permission.BIND_TV_INPUT\"/>","<uses-permission android:name=\"android.permission.BATTERY_STATS\"/>","<uses-permission android:name=\"android.permission.READ_SMS\"/>"]
+			},
+			"orientation": ["portrait-primary","portrait-secondary","landscape-primary","landscape-secondary"],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					 /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "unpackage/res/icons/57x57.png",/*iPhone普通屏幕程序图标，分辨率：57x57*/
+						"retina": "unpackage/res/icons/114x114.png",/*iPhone高分屏程序图标，分辨率：114x114*/
+						/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
+						"spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone高分屏Spotlight搜索程序图标，分辨率：58x58*/
+						/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png", /*iPhone设置页面程序图标，分辨率：29x29*/
+						"app@3x":"unpackage/res/icons/180x180.png","app@2x":"unpackage/res/icons/120x120.png","settings@2x":"unpackage/res/icons/58x58.png","settings@3x":"unpackage/res/icons/87x87.png","spotlight@2x":"unpackage/res/icons/80x80.png","spotlight@3x":"unpackage/res/icons/120x120.png","notification@2x":"unpackage/res/icons/40x40.png","notification@3x":"unpackage/res/icons/60x60.png"
+					},
+					"ipad": {
+						"normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "unpackage/res/icons/144x144.png", /*iPad高分屏程序图标，分辨率：144x144*/
+						 /*iPad iOS7程序图标，分辨率：76x76*/
+						 /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "unpackage/res/icons/50x50.png", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "unpackage/res/icons/100x100.png", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						/*iPad设置页面程序图标，分辨率：29x29*/
+						"app":"unpackage/res/icons/76x76.png","app@2x":"unpackage/res/icons/152x152.png","settings":"unpackage/res/icons/29x29.png","spotlight":"unpackage/res/icons/40x40.png","proapp@2x":"unpackage/res/icons/167x167.png","settings@2x":"unpackage/res/icons/58x58.png","spotlight@2x":"unpackage/res/icons/80x80.png","notification":"unpackage/res/icons/20x20.png","notification@2x":"unpackage/res/icons/40x40.png"
+					},"appstore":"unpackage/res/icons/1024x1024.png"
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png","xxxhdpi":"unpackage/res/icons/192x192.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": ""
+					},
+					"ipad": {
+						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": ""
+				}
+			},"debug":true
+		}
+	},
+	"dependencies":{
+		"pages": {
+			"index.html": {
+				"href": "index.html",
+				"resources": [
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"sy.html",
+					"tab-webview-subpage-about.html",
+					"home_final.html",
+					"css/iconfont.min.css"
+				],
+				"priority": 0,
+				"refer": [
+					"mp.html",
+					"ms.html",
+					"sq.html",
+					"tab-webview-subpage-setting.html",
+					"tab-webview-subpage-chat.html",
+					"tab-webview-subpage-contact.html",
+					"wd.html",
+					"guide.html",
+					"ticket.html",
+					"mine.html",
+					"kefu.html"
+				]
+			},
+			"sy.html": {
+				"resources": [],
+				"refer": [
+					"son-tripRoute/tripRoute.html",
+					"son-hotel/hotel.html",
+					"ticket-info/ticket-info.html"
+				],
+				"priority": 0
+			},
+			"ticket.html": {
+				"resources": [
+					"img-menpiao/images/主页门票_11.png",
+					"img-menpiao/images/主页门票_05.jpg",
+					"img-menpiao/images/主页门票_03.jpg",
+					"img-menpiao/images/主页门票_09.jpg",
+					"img-menpiao/images/主页门票_07.jpg",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/normalize.css",
+					"css/demo.css",
+					"css/tabs.css",
+					"css/tabstyles.css",
+					"css/home.css",
+					"images-home/home_02.jpg",
+					"images-home/home_37.png",
+					"images-home/home_75.png",
+					"images-home/home_77.png",
+					"images-home/home_79.png",
+					"js/modernizr.custom.js",
+					"js/mui.min.js",
+					"js/cbpFWTabs.js",
+					"imgs/home_59.png",
+					"imgs/home_02.jpg",
+					"img-menpiao/images/mp_03.jpg",
+					"img-menpiao/images/mp_05.jpg",
+					"img-menpiao/images/mp_07.jpg",
+					"img-menpiao/images/mp_09.jpg",
+					"img-menpiao/images/mp_11.png",
+					"img-menpiao/icon-01.png",
+					"images-home/home_47.png",
+					"images-home/home_49.png",
+					"images-home/home_51.png"
+				],
+				"refer": [
+					"sousuo/sousuo.html",
+					"list_kuangjia.html",
+					"son-inland-final/inland.html",
+					"son_pages/jiudian.html",
+					"son-theme-final/theme.html",
+					"son_pages/tuangou.html"
+				],
+				"priority": 0
+			},
+			"kefu.html": {
+				"resources": [
+					"kefuimg/电话 (6).png",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"kefuimg/kefu.css",
+					"js/mui.min.js",
+					"kefuimg/dianhua.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"home_final.html": {
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/home.css",
+					"images-home/home_02.jpg",
+					"images-home/home_37.png",
+					"images-home/home_75.png",
+					"images-home/home_77.png",
+					"images-home/home_79.png",
+					"js/mui.min.js",
+					"imgs/home_02.jpg",
+					"imgs/home_66.png",
+					"imgs/home_59.png",
+					"img-home-final/home_09.jpg",
+					"img-home-final/home_11.jpg",
+					"img-home-final/home_13.jpg",
+					"img-home-final/home_15.jpg",
+					"img-home-final/home_17.jpg",
+					"images-community/img-05.png",
+					"images-home/home_47.png",
+					"images-home/home_49.png",
+					"images-home/home_51.png"
+				],
+				"refer": [
+					"son_pages/jiudian.html",
+					"son_pages/tuangou.html",
+					"son-nearby-final/nearby.html",
+					"son-theme-final/theme.html",
+					"son-inland-final/inland.html",
+					"ticket-info-final/ticket-info.html"
+				],
+				"priority": 0
+			},
+			"son_pages/tuangou.html": {
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"son_pages/css/normalize.css",
+					"son_pages/css/demo.css",
+					"son_pages/css/tabs.css",
+					"son_pages/css/tabstyles.css",
+					"css/home.css",
+					"images-home/home_02.jpg",
+					"images-home/home_37.png",
+					"images-home/home_75.png",
+					"images-home/home_77.png",
+					"images-home/home_79.png",
+					"son_pages/js/modernizr.custom.js",
+					"js/mui.min.js",
+					"son_pages/js/cbpFWTabs.js",
+					"son_pages/img-menpiao/icon-01.png",
+					"imgs/home_59.png",
+					"imgs/home_02.jpg",
+					"imgs/images-menpiao/menpiao_29.png"
+				],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"son-nearby-final/nearby.html": {
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"js/mui.min.js",
+					"images-community/img-05.png",
+					"imgs/home_02.jpg",
+					"imgs/home_66.png",
+					"imgs/home_59.png",
+					"images-home/home_47.png",
+					"images-home/home_49.png",
+					"images-home/home_51.png",
+					"images-home/home_75.png"
+				],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"mine.html": {
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"js/mui.min.js",
+					"images-mine/login-user.png",
+					"images-mine/Icon-01.png",
+					"images-mine/icon-02.png",
+					"images-mine/icon-03.png",
+					"images-mine/icon-04.png",
+					"images-mine/icon-06.jpg",
+					"images-mine/icon-07.jpg",
+					"images-mine/icon-08.jpg",
+					"images-mine/Img-01.png"
+				],
+				"refer": [
+					"mine/my-order-needtem.html",
+					"mine/wddd.html",
+					"mine/wdqb.html"
+				],
+				"priority": 0
+			},
+			"son-inland-final/inland.html": {
+				"href": "son-inland-final/inland.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"js/mui.min.js",
+					"images-community/img-05.png",
+					"imgs/home_02.jpg",
+					"imgs/home_66.png",
+					"imgs/home_59.png",
+					"images-home/home_47.png",
+					"images-home/home_49.png",
+					"images-home/home_51.png",
+					"images-home/home_75.png"
+				],
+				"priority": 1
+			},
+			"son_pages/jiudian.html": {
+				"href": "son_pages/jiudian.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"son_pages/css/normalize.css",
+					"son_pages/css/demo.css",
+					"son_pages/css/tabs.css",
+					"son_pages/css/tabstyles.css",
+					"css/home.css",
+					"images-home/home_02.jpg",
+					"images-home/home_37.png",
+					"images-home/home_75.png",
+					"images-home/home_77.png",
+					"images-home/home_79.png",
+					"son_pages/js/modernizr.custom.js",
+					"js/mui.min.js",
+					"son_pages/js/cbpFWTabs.js",
+					"son_pages/img-gentuan/search.png",
+					"son_pages/img-gentuan/back.png",
+					"son_pages/img-menpiao/icon-01.png",
+					"imgs/images-menpiao/menpiao_29.png"
+				],
+				"priority": 2
+			},
+			"son-theme-final/theme.html": {
+				"href": "son-theme-final/theme.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"js/mui.min.js",
+					"images-community/img-05.png",
+					"imgs/home_02.jpg",
+					"imgs/home_66.png",
+					"imgs/home_59.png",
+					"images-home/home_47.png",
+					"images-home/home_49.png",
+					"images-home/home_51.png",
+					"images-home/home_75.png"
+				],
+				"priority": 3
+			},
+			"ticket-info-final/ticket-info.html": {
+				"href": "ticket-info-final/ticket-info.html",
+				"resources": [
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"ticket-info-final/ticket-info.css",
+					"css/home.css",
+					"images-home/home_02.jpg",
+					"images-home/home_37.png",
+					"images-home/home_75.png",
+					"images-home/home_77.png",
+					"images-home/home_79.png",
+					"ticket-info-final/img/tupian.png",
+					"ticket-info-final/img/OK.png",
+					"ticket-info-final/img/icon.png",
+					"ticket-info-final/img/add.png",
+					"images-home/home_47.png",
+					"images-home/home_49.png",
+					"images-home/home_51.png"
+				],
+				"priority": 5
+			},
+			"sousuo/sousuo.html": {
+				"href": "sousuo/sousuo.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"js/mui.min.js",
+					"sousuo/icon-01.png",
+					"img-menpiao/icon-01.png"
+				],
+				"priority": 2
+			},
+			"list_kuangjia.html": {
+				"href": "list_kuangjia.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"kefuimg/kefu.css",
+					"js/mui.min.js"
+				],
+				"priority": 3
+			},
+			"guide.html": {
+				"href": "guide.html",
+				"resources": [
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"js/mui.min.js"
+				],
+				"priority": 4
+			},
+			"mine/wdqb.html": {
+				"resources": [],
+				"refer": [
+					"mine/wdyhk.html",
+					"mine/ye.html",
+					"mine/wdrhj.html"
+				],
+				"priority": 0
+			},
+			"mine/wdyhk.html": {
+				"resources": [],
+				"refer": [
+					"mine/wdqb.html"
+				],
+				"priority": 0
+			},
+			"mine/ye.html": {
+				"resources": [],
+				"refer": [
+					"mine/cz.html",
+					"mine/wdqb.html",
+					"mine/tx.html"
+				],
+				"priority": 0
+			},
+			"mine/wdrhj.html": {
+				"resources": [],
+				"refer": [
+					"mine/wdqb.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"images-mine/icon-11.jpg",
+				"images-minsu/minsu_24.png",
+				"imgs/home_14.png",
+				"sousuo/add.png",
+				"son_pages/img-menpiao/search.png",
+				"css/animate.css",
+				"son_pages/img-jipiao/back.png",
+				"son-hotel-final/img-hotel/from.png",
+				"imgs/images-menpiao/menpiao_26.png",
+				"imgs/home_30.png",
+				"imgs/images-menpiao/Thumbs.db",
+				"son-hotel-final/img-hotel/icon.png",
+				"son-feijipiao-final/css/demo.css",
+				"images-minsu/minsu_33.png",
+				"js/mui.view.js",
+				"images-home/home_66.png",
+				"images-minsu/minsu_43.png",
+				"imgs/me/icon-04.png",
+				"son_pages/feijipiao.html",
+				"login-trip/fonts/mui.ttf",
+				"images-home/home_28.png",
+				"ticket-info-final/img/icon-03.png",
+				"son_pages/mudidi.html",
+				"images-community/icon-05.png",
+				"login-trip/js/mui.min.js",
+				"images-community/01.jpg",
+				"js/feedback.js",
+				"images-minsu/minsu_41.png",
+				"images-mine/Icon-10.png",
+				"imgs/me/icon-03.png",
+				"images-home/home_94.png",
+				"images-minsu/minsu_01.png",
+				"images-minsu/minsu_02.png",
+				"imgs/images-menpiao/menpiao_88.jpg",
+				"images-home/home_20.png",
+				"images-home/home_01.png",
+				"images-community/Thumbs.db",
+				"login-trip/images/password.png",
+				"images-home/home_27.png",
+				"imgs/images-menpiao/menpiao_03.png",
+				"images-home/home_59.png",
+				"mine/change-email-needtem.html",
+				"son-hotel-final/img-hotel/add.png",
+				"images-minsu/Thumbs.db",
+				"imgs/home_68.png",
+				"son-feijipiao-final/js/cbpFWTabs.js",
+				"son-hotel-final/img-hotel/back2.png",
+				"img-home-final/home_05.png",
+				"images-home/home_18.png",
+				"imgs/home_77.png",
+				"imgs/images-menpiao/menpiao_33.png",
+				"imgs/home_61.png",
+				"images-minsu/minsu_04.png",
+				"images-mine/Icon-09.png",
+				"images-mine/Thumbs.db",
+				"login-trip/js/feedback-page.js",
+				"mine/forget-psd-needtem.html",
+				"imgs/home_90.png",
+				"js/mui.picker.min.js",
+				"js/sy.js",
+				"son_pages/img-jipiao/航班动态.png",
+				"images-community/img-01.png",
+				"images-home/home_68.png",
+				"imgs/home_07.png",
+				"img-menpiao/back.png",
+				"imgs/home_92.png",
+				"son-feijipiao-final/img-jipiao/订单.png",
+				"login-trip/images/weibo.png",
+				"son_pages/img-menpiao/star.png",
+				"son-hotel-final/css/hotel.css",
+				"mine/login.html",
+				"imgs/home_94.png",
+				"son-hotel-final/img-hotel/time.png",
+				"son-feijipiao-final/img-jipiao/轮播_02.png",
+				"imgs/me/icon-11.jpg",
+				"son-feijipiao-final/img-jipiao/机票.jpg",
+				"images-community/icon-02.png",
+				"son_pages/img-jipiao/轮播_02.png",
+				"son_pages/img-jipiao/机票.jpg",
+				"son-hotel-final/img-hotel/back.png",
+				"imgs/home_63.png",
+				"css/own.css",
+				"mine/address-needtem.html",
+				"images-minsu/minsu_07.png",
+				"imgs/me/Img-01.png",
+				"imgs/home_29.png",
+				"son_pages/gentuan.html",
+				"son_pages/img-jipiao/feiji.png",
+				"images-community/img-06.png",
+				"imgs/home_57.jpg",
+				"login-trip/images/sinaweibo.png",
+				"son-hotel-final/img-hotel/search.png",
+				"son_pages/img-jipiao/lALPBbCc1TqkWZ43Nw_55_55.png",
+				"images-home/home_57.jpg",
+				"login-trip/js/feedback.js",
+				"login-trip/js/mui.enterfocus.js",
+				"imgs/me/icon-07.jpg",
+				"son_pages/img-jipiao/低价提醒.png",
+				"mine/change-psd-needtem.html",
+				"images-minsu/minsu_12.png",
+				"son-hotel-final/img-hotel/hotel_02.png",
+				"login-trip/libs/easymob-webim-sdk/easemob.im-1.0.5.js",
+				"son_pages/shequ.html",
+				"login-trip/js/mui.view.js",
+				"images-home/search.png",
+				"son-feijipiao-final/img-jipiao/back.png",
+				"ticket-info-final/img/icon-01.png",
+				"login-trip/main.html",
+				"imgs/me/login-user.png",
+				"images-home/home_82.png",
+				"imgs/home_31.png",
+				"son_pages/img-menpiao/images/主页门票_03.jpg",
+				"son-hotel-final/img-hotel/周边酒店.jpg",
+				"ticket-info-final/img/good.png",
+				"son-hotel-final/img-hotel/国内酒店.jpg",
+				"imgs/home_01.png",
+				"imgs/images-menpiao/menpiao_01.png",
+				"imgs/home_51.png",
+				"login-trip/images/icon-02.png",
+				"images-minsu/minsu_31.png",
+				"imgs/me/Icon-01.png",
+				"images-minsu/minsu_05.png",
+				"css/minsu.css",
+				"son-hotel-final/img-hotel/history.png",
+				"imgs/home_18.png",
+				"imgs/images-menpiao/menpiao_07.png",
+				"imgs/home_86.png",
+				"js/own.js",
+				"imgs/images-menpiao/menpiao_35.png",
+				"login-trip/libs/easymob-webim-sdk/quickstart.md",
+				"login-trip/images/wechat.png",
+				"login-trip/images/iconfont-tianjia.png",
+				"login-trip/js/login.js",
+				"imgs/me/icon-05.jpg",
+				"imgs/home_16.png",
+				"login-trip/setting.html",
+				"images-home/home_07.png",
+				"imgs/home_79.png",
+				"fonts/iconfont.ttf",
+				"css/mp.css",
+				"login-trip/images/qq.png",
+				"js/mui.js",
+				"images-home/home_90.png",
+				"son-feijipiao-final/img-jipiao/feiji.png",
+				"login-trip/images/user-photo.png",
+				"imgs/me/Icon-09.png",
+				"images-home/home_61.png",
+				"images-home/home_88.png",
+				"son-feijipiao-final/img-jipiao/机票往返.jpg",
+				"img-home-final/home_02.png",
+				"login-trip/login.html",
+				"images-minsu/minsu_46.png",
+				"login-trip/manifest.json",
+				"images-home/home_86.png",
+				"images-home/home_14.png",
+				"ticket-info-final/img/icon-02.png",
+				"son-feijipiao-final/img-jipiao/意见反馈.png",
+				"ticket-info-final/img/back.png",
+				"imgs/images-menpiao/menpiao_12.png",
+				"images-community/icon-01.png",
+				"images-home/home_30.png",
+				"imgs/me/icon-02.png",
+				"imgs/home_82.png",
+				"login-trip/libs/easymob-webim-sdk/strophe-custom-2.0.0.js",
+				"son-feijipiao-final/css/tabs.css",
+				"images-home/home_31.png",
+				"imgs/home_47.png",
+				"son_pages/chepiao.html",
+				"son-feijipiao-final/css/normalize.css",
+				"images-home/home_04.png",
+				"imgs/images-menpiao/menpiao_02.png",
+				"imgs/home_04.png",
+				"son-hotel-final/hotel.html",
+				"login-trip/unlock.html",
+				"imgs/home_40.png",
+				"son-hotel-final/img-hotel/图层 5.png",
+				"son-feijipiao-final/img-jipiao/低价提醒.png",
+				"son-hotel-final/img-hotel/酒店（周边-东莞）.jpg",
+				"mine/register-needtem.html",
+				"images-mine/icon-05.jpg",
+				"mine/change-address-needtem.html",
+				"imgs/home_88.png",
+				"imgs/search.png",
+				"images-community/img-04.png",
+				"son_pages/img-jipiao/机票往返.jpg",
+				"login-trip/images/mail.png",
+				"images-community/img-02.png",
+				"imgs/home_69.png",
+				"js/jquery-3.2.1.js",
+				"images-community/icon-04.png",
+				"son_pages/img-menpiao/images/主页门票_11.png",
+				"son-feijipiao-final/img-jipiao/lALPBbCc1TqkWZ43Nw_55_55.png",
+				"css/feedback.css",
+				"login-trip/css/mui.min.css",
+				"imgs/home_71.png",
+				"imgs/home_12.png",
+				"images-home/home_16.png",
+				"son_pages/img-menpiao/images/主页门票_09.jpg",
+				"ticket-info-final/img/page.png",
+				"son-feijipiao-final/img-jipiao/尺寸.png",
+				"son-feijipiao-final/feijipiao.html",
+				"images-minsu/minsu_26.png",
+				"son_pages/img-menpiao/images/主页门票_05.jpg",
+				"login-trip/css/login.css",
+				"images-community/img-03.png",
+				"images-community/icon-03.png",
+				"login-trip/README.md",
+				"login-trip/js/mui.locker.js",
+				"css/mui.picker.min.css",
+				"images-minsu/minsu_51.png",
+				"imgs/home_20.png",
+				"login-trip/css/feedback-page.css",
+				"login-trip/reg.html",
+				"son_pages/img-jipiao/订单.png",
+				"son_pages/img-menpiao/back.png",
+				"css/mui.css",
+				"son_pages/img-jipiao/喵喵助手.png",
+				"imgs/me/icon-08.jpg",
+				"imgs/home_49.png",
+				"son-feijipiao-final/img-jipiao/喵喵助手.png",
+				"images-home/home_40.png",
+				"mine/feedback-needtem.html",
+				"imgs/me/icon-06.jpg",
+				"son-hotel-final/img-hotel/icon-00.png",
+				"login-trip/images/qihoo.png",
+				"login-trip/libs/easymob-webim-sdk/json2.js",
+				"son_pages/img-jipiao/尺寸.png",
+				"son-feijipiao-final/css/tabstyles.css",
+				"imgs/home_28.png",
+				"images-home/home_69.png",
+				"images-home/home_29.png",
+				"images-home/home_92.png",
+				"imgs/home_37.png",
+				"imgs/me/Icon-10.png",
+				"imgs/images-menpiao/menpiao_31.png",
+				"sousuo/search.png",
+				"img-menpiao/search.png",
+				"images-home/home_71.png",
+				"son-feijipiao-final/img-jipiao/航班动态.png",
+				"login-trip/js/app.js",
+				"login-trip/libs/easymob-webim-sdk/jquery-1.11.1.js",
+				"login-trip/images/weixin.png",
+				"images-minsu/minsu_47.png",
+				"images-home/home_12.png",
+				"son_pages/img-menpiao/images/主页门票_07.jpg",
+				"img-menpiao/star.png",
+				"son_pages/img-jipiao/意见反馈.png",
+				"imgs/home_27.png",
+				"login-trip/forget_password.html",
+				"son-hotel-final/img-hotel/酒店.jpg",
+				"imgs/home_75.png",
+				"son-feijipiao-final/js/modernizr.custom.js",
+				"images-minsu/minsu_20.png",
+				"images-home/home_63.png",
+				"images-minsu/minsu_15.png",
+				"son-hotel-final/img-hotel/icon-0.png"
+			]
+		}
+	},
+	"unpackage":[]
+}

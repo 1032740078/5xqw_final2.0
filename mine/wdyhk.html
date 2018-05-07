@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body style="background-color: white;">
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我的银行卡</h1>
+		</header>
+		<div class="mui-content" style="background-color: white;">
+			<div class="" style="background: url(wdqb/yhk.png) no-repeat center;background-size: 90vw ;">
+				<div id="" class="mui-row" style="height: 22vh;">
+					<div class="mui-col-xs-9" style="margin-top: 6vh;margin-left: 22vw;color: white;">
+						中国工商银行
+					</div>
+					<div class="mui-col-xs-9" style="margin-left: 22vw;color: white;">
+						储蓄卡
+					</div>
+					<div class="mui-col-xs-9" style="margin-top: 2vh;margin-left: 22vw;color: white;">
+						1334 **** **** 1465
+					</div>
+				</div>
+			</div>
+
+			<div id="tjyhk" style="margin-left: 6vw;">
+
+				<button id="button1" class="mui-btn mui-btn-primary mui-btn-block mui-btn-outlined" style="width: 95%; color: #47a9e1;border-color:#47a9e1 ;">添加银行卡</button>
+			</div>
+
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			mui.plusReady(function(){
+				var btn = document.getElementById("button1")
+
+			btn.addEventListener("tap", function() {
+				var yhkHtml = '<div class="" style="background:url(wdqb/yhk.png) no-repeat center;background-size:90vw"><div id="" class="mui-row" style="height:22vh"><div class="mui-col-xs-9" style="margin-top:6vh;margin-left:22vw;color:white">中国工商银行</div><div class="mui-col-xs-9" style="margin-left:22vw;color:white">储蓄卡</div><div class="mui-col-xs-9" style="margin-top:2vh;margin-left:22vw;color:white">1334 **** **** 1465</div></div></div>'
+//				var yhk = document.getElementById('tjyhk')
+				mui('#tjyhk')[0].insertAdjacentHTML('beforebegin', yhkHtml);//HTML片段插入'beforebegin'元素自身的前面。'afterbegin'插入元素内部的第一个子节点之前。'beforeend'插入元素内部的最后一个子节点之后。'afterend'元素自身的后面。
+
+
+			});
+				
+});
+			
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="kefuimg/kefu.css" />
+		
+	</head>
+
+	<body style="background-color: #000000">
+		<div class="important2" style="" id="div1">
+			<a href="tel:18688888888">
+				<img class="photo" style="width: 20%;margin-left: 40%;" src="kefuimg/dianhua.png" />
+				<p style="text-align:center;color: red;">点击我拨打客服电话!</p>
+			</a>
+		</div>
+		<script type="text/javascript">
+			var o = document.getElementById("div1");
+			o.addEventListener("webkitAnimationEnd", function() {
+				o.getAttributeNode("class").value = "important3";
+			})
+		</script>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+
+	</body>
+
+</html>

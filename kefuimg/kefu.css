@@ -1,0 +1,30 @@
+#div1
+{
+animation: myfirst 3s;
+-moz-animation: myfirst 3s;	/* Firefox */
+-webkit-animation: myfirst 3s;	/* Safari 和 Chrome */
+-o-animation: myfirst 3s;	/* Opera */
+}
+@keyframes myfirst
+{
+
+100% {margin-top: 50%;}
+}
+
+@-moz-keyframes myfirst/* Firefox */
+{
+
+100% {margin-top: 50%;}
+}
+
+@-webkit-keyframes myfirst/* Safari 和 Chrome */
+{
+100% {margin-top: 50%;}
+}
+
+@-o-keyframes myfirst/* Opera */
+{
+100% {margin-top: 50%;}
+}
+.important3{margin-top: 50%;margin-left: 0%;}
+.important2{margin-top: 200%;margin-left: 00%;}

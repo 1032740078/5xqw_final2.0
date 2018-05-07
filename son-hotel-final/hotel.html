@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/hotel.css" />
+	</head>
+	<body>
+		<style>
+			.mui-control-content {
+				background-color: white;
+				min-height: 215px;
+			}
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+		</style>
+		
+		
+		
+		<!-- 返回按钮 -->
+		<!--<img id="back-header" src="img-hotel/back.png"/>-->
+		
+		<!--
+        	作者：416840821@qq.com
+        	时间：2017-12-18
+        	描述：轮播图
+        -->
+		<div id="slider" class="mui-slider" style="height: 200px;">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="imgs/home_02.jpg">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item" style="margin-top: -20px;">
+						<a href="#">
+							<img height="200px" src="img-hotel/hotel_02.png">
+						</a>
+					</div>
+					
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="imgs/home_02.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+
+			</div>
+			
+			<!--
+            	作者：416840821@qq.com
+            	时间：2017-12-18
+            	描述：选择酒店类型
+            -->
+            <div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item" href="#item1mobile">
+				周边
+			</a>
+					<a class="mui-control-item" href="#item2mobile">
+				国内
+			</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell" style="padding: 10px 0 5px 0!important;">
+<!--  -->								<p style="margin: 8px 0 0 15px;" class="large">广州</p>
+										<div class="location">
+											<img src="img-hotel/add.png"/>
+											<p style="font-size: 12px;">我的位置</p>
+										</div>
+<!--  -->								<img style="margin-top: 7px;" src="img-hotel/icon.png"/>
+									</li>
+									
+									<li class="mui-table-view-cell">
+										<font style="font-family: '微软雅黑';font-size: 20px;">12月20日</font>
+										
+										<img style="" src="img-hotel/icon.png"/>
+									</li>
+									
+									<li class="mui-table-view-cell">
+										<div class="mui-row mui-input-row mui-search" style="background: white;width: 100%;">
+											<div class="mui-col-xs-6" style="margin: 4% 3% 0 3%;width: 94%;">
+												<input type="search"  class="mui-input-clear " placeholder="输入地点/酒店名称">
+											</div>												
+										</div>
+									</li>
+									
+									
+									
+								</ul>
+								
+							</div>
+						</div>
+					</div>
+					
+
+			<button type="button" class="mui-btn mui-btn-warning mui-btn-block" style="margin: 20px auto;width: 200px;background: yellow;border: 0;">搜索</button>
+
+			<!--<div class="twoBtns"><img src="img-hotel/history.png"/><p>浏览历史</p></div>	    |	 <div class="twoBtns"><img id="from" src="img-hotel/from.png"/><p>我的订单</p></div>-->
+			
+				</div>
+			</div>
+		</div>
+		
+		<p style="text-align: center;margin-top: 100px;">快速确认 闪电发货</p>
+		
+		<!-- 页脚两个按钮 -->
+		<div style="height: 95px;background: white;padding: 20px 0;">
+			<button type="button" class="mui-btn" style="float: left;margin-left: 10%;height: 50px;line-height: 36px;">
+				<img src="img-hotel/history.png" style="width: 25px;margin-top: 5px;"/>
+		                     浏览历史
+		    </button>
+		    
+		    <button type="button" class="mui-btn" style="float: right;margin-right: 10%;height: 50px;line-height: 36px;">
+		    	<img src="img-hotel/from.png" style="width: 25px;"/>
+		                     我的订单
+		    </button>
+		</div>
+		
+		
+		
+		<script src="../js/mui.min.js"></script>
+		<script>
+			mui.init({
+				swipeBack: false
+			});
+			(function($) {
+				$('.mui-scroll-wrapper').scroll({
+					indicators: true //是否显示滚动条
+				});
+				var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li></ul>';
+				var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li></ul>';
+				var item2 = document.getElementById('item2mobile');
+				var item3 = document.getElementById('item3mobile');
+				document.getElementById('slider').addEventListener('slide', function(e) {
+					if (e.detail.slideNumber === 1) {
+						if (item2.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item2.querySelector('.mui-scroll').innerHTML = html2;
+							}, 500);
+						}
+					} else if (e.detail.slideNumber === 2) {
+						if (item3.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item3.querySelector('.mui-scroll').innerHTML = html3;
+							}, 500);
+						}
+					}
+				});
+				var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+				$('.mui-input-group').on('change', 'input', function() {
+					if (this.checked) {
+						sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+						//force repaint
+						sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+					}
+				});
+			})(mui);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">	
+			.mui-content {
+				background: white;
+			}		
+			.mui-control-content {
+				background-color: white;
+				min-height: 215px;
+			}
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}		
+			p {
+				text-indent: 22px;
+			}			
+			.mui-content {
+				padding-top: 45px;
+			}
+			.mui-table-view {
+				padding-bottom: 0!important;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+        	作者：416840821@qq.com
+        	时间：2017-12-20
+        	描述：轮播图
+        -->
+        <header class="mui-bar mui-bar-nav">
+        	<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        	<h1 class="mui-title">周边游</h1>
+        </header>
+		<div id="slider" class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="../imgs/home_02.jpg">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../imgs/home_02.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../imgs/home_66.png">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../imgs/home_59.png">
+					</a>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../imgs/home_66.png">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="../imgs/home_02.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+
+		</div>
+		
+		<!-- 搜索框 -->
+		<div class="mui-row mui-input-row mui-search" style="background: white;">
+			<div class="mui-col-xs-6" style="margin: 4% 3% 0 3%;width: 94%;">
+				<input type="search"  class="mui-input-clear " placeholder="冬天旅行暖心记">
+			</div>
+				
+		</div>
+		
+		<!-- 大广告 -->
+		<ul class="mui-table-view">
+		    <li class="mui-table-view-cell mui-media">
+		        <a href="javascript:;">
+		            <img class=" mui-pull-left" style="width: 105px;" src="../images-community/img-05.png">
+		            <div class="mui-media-body" style="padding-left: 5%;font-size: 14px;">
+		                  一路阳光一路海,一路公路5
+		                  <div class="mui-ellipsis" >
+		                  	 <p style="font-size: 12px;margin-left: -20px;">你是我翻山越岭寻找我的小熊</p>
+		                	 <p style="font-size: 12px;margin-left: -20px;">我是茫茫人海中等待你的那棵树</p>
+		                  </div>
+		                  <div class="mui-row">
+		                  	 
+		            <div class="mui-col-xs-2" style="padding-top: 3%;">
+		            	<font><span style="font-family: '微软雅黑';font-size: 30px;color: red;">￥199</span> 起</font>
+		            </div>
+		            			            	
+		            <div class="mui-col-xs-2" style="padding-top: 3%;margin-right: 25px;float: right;">
+		            	<font>广州出发</font>
+		            </div>
+		                  </div>
+		              
+		            </div>
+		            
+		        </a>
+		    </li>
+		</ul>
+		
+		<!--
+        	作者：416840821@qq.com
+        	时间：2018-01-02
+        	描述：划动式广告位
+        -->
+		<div class="mui-content" style="padding-top: 0;">
+			
+			<div class="mui-col-xs-11" style="width: 100%;padding-top: 10px;">
+				<h4 class="h3_002" style="background-color:#fff;width: 100%;display: inline-block;text-align: center;">热门城市</h4>
+			</div>
+			
+		    <div class="mui-slider">
+		        <div class="mui-slider-group mui-slider-loop">		        			     		        	
+		        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+		            <div class="mui-slider-item mui-slider-item-duplicate">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="../images-home/home_47.png"></a>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="../images-home/home_49.png"></a>
+		                </ul>
+		            </div>
+		            <div class="mui-slider-item">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="../images-home/home_51.png"></a>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="../images-home/home_47.png"></a>
+		                </ul>
+		            </div>
+		            <div class="mui-slider-item">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="../images-home/home_49.png"></a>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="../images-home/home_51.png"></a>
+		                </ul>
+		            </div>
+		            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+		            <div class="mui-slider-item mui-slider-item-duplicate">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="../images-home/home_47.png"></a>
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-6"><a href="#"><img class="mui-media-object" src="../images-home/home_49.png"></a>
+		                </ul>
+		            </div>
+		        </div>
+		        <div class="mui-slider-indicator" style="position: static;background-color: #fff;">
+		            <span class="mui-action mui-action-previous mui-icon mui-icon-back"></span>
+		            <div class="mui-number" style="margin: 10px 0 10px 0;">
+		                <span>1</span> / 2
+		            </div>
+		            <span class="mui-action mui-action-next mui-icon mui-icon-forward"></span>
+		        </div>
+		    </div>
+		</div>
+		
+		<!-- 卡片 -->
+		<div class="mui-card">
+			<div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(../images-home/home_75.png)"></div>
+			<div class="mui-card-content">
+				<div style="padding-top: 2%;padding-left: 5%;">
+
+					<h4 style="color: #333;">黄山宏村洗地微云3日游</h4>
+					<h5>欲识金银气，多从黄白游。一生痴绝处，无梦...</h5>
+				</div>
+			</div>
+			
+
+		</div>
+		
+		
+		
+		
+		
+		<!-- 轮播图js代码 -->
+		<script src="../js/mui.min.js"></script>
+		<script>
+			mui.init({
+				swipeBack: false
+			});
+			(function($) {
+				$('.mui-scroll-wrapper').scroll({
+					indicators: true //是否显示滚动条
+				});
+				var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+				var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li><li class="mui-table-view-cell">第三个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
+				var item2 = document.getElementById('item2mobile');
+				var item3 = document.getElementById('item3mobile');
+				document.getElementById('slider').addEventListener('slide', function(e) {
+					if (e.detail.slideNumber === 1) {
+						if (item2.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item2.querySelector('.mui-scroll').innerHTML = html2;
+							}, 500);
+						}
+					} else if (e.detail.slideNumber === 2) {
+						if (item3.querySelector('.mui-loading')) {
+							setTimeout(function() {
+								item3.querySelector('.mui-scroll').innerHTML = html3;
+							}, 500);
+						}
+					}
+				});
+				var sliderSegmentedControl = document.getElementById('sliderSegmentedControl');
+				$('.mui-input-group').on('change', 'input', function() {
+					if (this.checked) {
+						sliderSegmentedControl.className = 'mui-slider-indicator mui-segmented-control mui-segmented-control-inverted mui-segmented-control-' + this.value;
+						//force repaint
+						sliderProgressBar.setAttribute('style', sliderProgressBar.getAttribute('style'));
+					}
+				});
+			})(mui);
+		</script>
+		
+		
+
+		<!-- 轮播图js代码 -->
+		<script type="text/javascript" charset="utf-8">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			var slider = mui("#slider");
+			//document.getElementById("switch").addEventListener('toggle', function(e) {
+			//				if (e.detail.isActive) {
+			slider.slider({
+				interval: 5000
+			});
+			//				} else {
+			//					slider.slider({
+			//						interval: 0
+			//					});
+			//				}
+			//});
+			mui.back=function(){
+				void plus.webview.close(plus.webview.currentWebview());
+			}
+		</script>
+		<script src="js/sy.js"></script>
+		
+	</body>
+</html>
